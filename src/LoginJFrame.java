@@ -37,9 +37,11 @@ public class LoginJFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if(jtfID.getText().equals("87")&&jtfPW.getText().equals("87")){
+                if(jtfID.getText().equals("h304")&&jtfPW.getText().equals("23323456")){
                     System.out.println("登入成功");
                    MainJFrame mf = new  MainJFrame(LoginJFrame.this);
+                   jtfID.setText("");
+                   jtfPW.setText("");
                     mf.setVisible(true);
                     LoginJFrame.this.setVisible((false));
                 }else{
